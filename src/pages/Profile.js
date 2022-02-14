@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import Layout from '../Layout';
 
 const data = {
     velopert: {
@@ -17,6 +18,7 @@ const Profile = () => {
 
     return(
         <div>
+            <Layout />
             <h1>사용자 프로필</h1>
             {profile ? (
                 <div>
@@ -31,3 +33,5 @@ const Profile = () => {
 };
 
 export default Profile;
+
+
